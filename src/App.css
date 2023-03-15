@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background-color: #0b0c10;
+  color: #c5c6c7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #45a29e;
+  box-shadow: 2px 2px 2px #222;
+}
+.header img {
+  height: 40px;
+}
+.header h2 {
+  color: #0b0c10;
+  font-family: cursive, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.bg-img {
+  width: 100%;
+  margin: 0 auto;
+  background: url("./assets/bg-img.jpg") repeat;
+}
+section {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  font-weight: bold;
+  padding: 0.5rem;
+  border: none;
+}
+button:not([type="submit"]) {
+  display: block;
+  color: #c5c6c7;
+  border-radius: 22px;
+  border: none;
+  height: fit-content;
+  background: #000;
+  background: linear-gradient(121deg, #0b0c10 0%, #1f2833 85%);
+  box-shadow: inset 0px 3px 3px 3px #c5c6c7;
+}
+button[type="submit"] {
+  border-radius: 5px;
+  color: #c5c6c7;
+  background-color: #1f2833;
+}
+button:active {
+  box-shadow: inset 0px 2px 2px #000;
+}
+.write-message {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 0px #000;
+  background-color: #1f2833;
+  color: #c5c6c7;
+}
+
+.chat {
+  margin-top: 50px;
+  width: 100%;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 2px;
+  text-indent: 2ch;
+  box-shadow: 3px 3px #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70%;
+  margin: 10px;
+}
+.message img {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.received {
+  text-align: left;
+  background-color: #035a56;
+  align-self: flex-start;
+  border-radius: 40px 40px 40px 0;
+}
+.sent {
+  text-align: right;
+  flex-direction: row-reverse;
+  background-color: #3a8b86;
+  color: #1f2833;
+  align-self: flex-end;
+  border-radius: 40px 40px 0 40px;
+}
+.send-form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.send-form button {
+  box-shadow: inset #9df5ef 0px 1px;
+  margin-right: 5px;
+}
+.send-form input {
+  box-shadow: inset #9df5ef 1px 1px;
+  flex: 1;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
