@@ -30,7 +30,7 @@ body {
 .bg-img {
   width: 100%;
   margin: 0 auto;
-  background: url("https://ran-sy.github.io/ultimate-chat//assets/bg-img.jpg") repeat;
+  background: url("https://ran-sy.github.io/ultimate-chat/src/assets/bg-img.jpg") repeat;
 }
 section {
   margin-top: 50px;
