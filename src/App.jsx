@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import "./App.css";
-import logo from "https://ran-sy.github.io/ultimate-chat//assets/vite.svg";
+import "https://ran-sy.github.io/ultimate-chat/src/App.css";
+import logo from "https://ran-sy.github.io/ultimate-chat/src/assets/vite.svg";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
